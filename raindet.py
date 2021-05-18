@@ -11,7 +11,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 
 import pickle
-data=pd.read_csv("/static/temphumdetails.csv")
+data=pd.read_csv("temphumdetails.csv")
 data=pd.DataFrame(data)
 def fahr_to_celsius(temp_fahr):
     """Convert Fahrenheit to Celsius
