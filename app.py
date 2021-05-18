@@ -33,7 +33,7 @@ app=Flask(__name__,template_folder='template')
 
 @app.route('/')
 def man():
-    return render_template("rain.html")
+    return render_template("/Template/rain.html")
 
 
 @app.route('/predict',methods=['POST'])
@@ -45,7 +45,7 @@ def home():
 
     # output='{0:.{1}f}'.format(pred[0][1], 2)
     output=pred
-    return render_template('rainafter.html',data=output)
+    return render_template('/Template/rainafter.html',data=output)
 
 @app.route('/predict1',methods=['POST'])
 def fb():
